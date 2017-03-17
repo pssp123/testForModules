@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/operator.dir/main.o  -o operator -rdynamic 

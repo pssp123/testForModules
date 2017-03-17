@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/constructor.dir/main.o  -o constructor -rdynamic 

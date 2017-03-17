@@ -1,0 +1,39 @@
+#include "stdafx.h"
+class testP
+{
+public:
+ int t1;
+ int t2;
+public:
+ //testP(int t = 1){}  //正确
+ testP(int t){}
+ testP(const testP&t ){}  //没有const也可以通过编译，在C++PRIMER中说“传统上我们声明为const”p584(14-2-3节。)
+ void set(){};//注意这个分号，包括CPP中函数后加上，他不代表类中的函数可以跟一个分号，而是代表一个空语句。
+};
+class testStatic:public testP
+{
+public:
+ testStatic():testP(1){}//正确：在这里虽然找不到父类无参构造函数，但公开声明了一个带参函数
+ static void test();
+ void nonstatic();
+public:
+ static int t;
+};
+int testStatic::t = 0;
+void testStatic::test()
+{
+  
+}
+void testStatic::nonstatic()
+{
+ test();
+}
+
+int main(int argc, char* argv[])
+{
+ testStatic::test();
+ testStatic t;
+ t.set();
+ printf("Hello World!\n");
+ return 0;
+}

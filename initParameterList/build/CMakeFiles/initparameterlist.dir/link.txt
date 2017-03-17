@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/initparameterlist.dir/main.o  -o initparameterlist -rdynamic 
