@@ -1,0 +1,1 @@
+/home/pierre/projects/g2o_ba_exampl/build/CMakeFiles/ba_example.dir

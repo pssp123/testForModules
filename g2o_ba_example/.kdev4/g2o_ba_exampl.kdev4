@@ -1,5 +1,5 @@
 [Buildset]
-BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00&\x00c\x00e\x00r\x00e\x00s\x00_\x00c\x00u\x00r\x00v\x00e\x00_\x00f\x00i\x00t\x00t\x00i\x00n\x00g)
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x1a\x00g\x002\x00o\x00_\x00b\x00a\x00_\x00e\x00x\x00a\x00m\x00p\x00l)
 
 [CMake]
 Build Directory Count=1
@@ -7,12 +7,12 @@ Current Build Directory Index=0
 ProjectRootRelative=./
 
 [CMake][CMake Build Directory 0]
-Build Directory Path=file:///home/pierre/projects/ceres_curve_fitting/build
+Build Directory Path=file:///home/pierre/projects/g2o_ba_exampl/build
 Build Type=Debug
 CMake Binary=file:///usr/bin/cmake
 Environment Profile=
 Extra Arguments=
-Install Directory=file:///usr/local
+Install Directory=
 
 [Launch]
 Launch Configurations=Launch Configuration 0
@@ -28,15 +28,12 @@ Arguments=
 Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
 Dependency Action=Nothing
 EnvironmentGroup=default
-Executable=file:///home/pierre/projects/ceres_curve_fitting/
+Executable=file:///home/pierre/projects/g2o_ba_exampl/
 External Terminal=konsole --noclose --workdir %workdir -e %exe
-Project Target=ceres_curve_fitting,ceres_curve_fitting
+Project Target=g2o_ba_exampl,ba_example
 Use External Terminal=false
 Working Directory=
 isExecutable=false
 
 [Project]
 VersionControlSupport=kdevgit
-
-[SourceFileTemplates]
-LastUsedTemplate=/home/pierre/.kde/share/apps/kdevfiletemplates/template_descriptions/cpp_basic.desktop
