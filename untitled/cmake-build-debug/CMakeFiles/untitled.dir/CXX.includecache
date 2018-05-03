@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pierre/untitled/main.cpp
+iostream
+-
+math.h
+-
+typeinfo
+-
+eigen3/Eigen/Core
+-
+vector
+-
+eigen3/Eigen/Dense
+-
+functional
+-
+deque
+-
+queue
+-
+list
+-
+forward_list
+-
+vector
+-
+assert.h
+/home/pierre/untitled/assert.h
+gtest/gtest.h
+/home/pierre/untitled/gtest/gtest.h
+
