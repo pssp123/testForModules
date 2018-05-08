@@ -12,6 +12,8 @@
 #include <vector>
 #include "assert.h"
 #include "gtest/gtest.h"
+#include <fstream>
+#include <sstream>
 
 
 using namespace std;
@@ -444,8 +446,47 @@ void test(){
 	}
 }*/
 
+//output input
+/*void outFile()
+{
+	ofstream out("abc.txt");
+	if(out.is_open()){
+		out << "pengpei" << endl;
+		out << "pengyuanjing" << endl;
+		out.close();
+	}
+}
+
+void intputFile()
+{
+	ifstream input("abc.txt");
+	if(input.is_open())
+	{
+		while(!input.eof()){
+			char s[256];
+			input.getline(s,100);
+			cout << s << endl;
+		}
+	}
+}
+
+void outStringstream()
+{
+	ostringstream out;
+	out.clear();
+	out << "pengpei ";
+	out << "and ";
+	out << "pengyuanjing\n";
+	cout << out.str();
+	out.str("");
+	out << "pengpei ";
+	out << "and ";
+	out << "pengyuanjing";
+	cout << out.str();
+}*/
+
 int main(int argc, char* argv[]) {
-	void (*fun)() = sort;
+	void (*fun)() = outStringstream;
 	fun();
 	return 0;
 }

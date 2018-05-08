@@ -35,4 +35,8 @@ assert.h
 /home/pierre/workspace/testForModules/untitled/assert.h
 gtest/gtest.h
 /home/pierre/workspace/testForModules/untitled/gtest/gtest.h
+fstream
+-
+sstream
+-
 
