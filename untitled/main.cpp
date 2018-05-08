@@ -121,8 +121,17 @@ void function_bind(){
 	a.push_back(2);
 	a.push_back(3);
 
+	//example 1
 //	std::function<void(int)> fun = [](int it){cout<<it+1<<endl;};
-	std::function<void(int)> fun = bind(add,std::placeholders::_1,20);
+
+	//example 2
+//	std::function<void(int)> fun = bind(add,std::placeholders::_1,20);
+//	for_each(a.begin(),a.end(),fun);
+
+	//example 3
+	std::function<void(int)> fun = bind([](int a, int b, int c){
+		cout << a + a + b + c + c<< endl;
+	},std::placeholders::_1,10,20);
 	for_each(a.begin(),a.end(),fun);
 }*/
 
@@ -192,6 +201,7 @@ private:
 	std::sort(a.begin(),a.end(),[](int a,int b){
 		return a < b;
 	});
+	std::sort(a.begin(),a.end(), greater<int>());
 	cout<< a.at(0)<< endl;
 	cout<< a.at(1)<< endl;
 	cout<< a.at(2)<< endl;
@@ -435,7 +445,7 @@ void test(){
 }*/
 
 int main(int argc, char* argv[]) {
-	void (*fun)() = test;
+	void (*fun)() = sort;
 	fun();
 	return 0;
 }
