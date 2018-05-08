@@ -77,7 +77,7 @@ void dynamic_cast_invert(){
 }*/
 
 //find_if
-void find_if()
+/*void find_if()
 {
 	vector<int> vec{36,5,3,4};
 	int a = 5;
@@ -87,7 +87,7 @@ void find_if()
 	auto dis = std::distance(vec.begin(),loc);
 	cout << "the value can find:" << *loc << endl;
 	cout << "dis:" << dis << endl;
-}
+}*/
 
 //The destruct function of base class is virtual,when the pointer as base class
 /*class A
@@ -99,17 +99,17 @@ public:
 class B : public A{
 public:
 	B() { cout<< "3"<<endl; }
-	~B() override { cout<< "4"<<endl; }
+	~B() override{ cout<< "4"<<endl; }
 };*/
 
 //explicit
-class A{
+/*class A{
 public:
 	explicit A(float a,float b){cout<<a<<endl;}
 	//error when construct define as explicit.
-	// Here,complier will use "1" as default parameter to generate class A object temperature
+	// Here,compiler will use "1" as default parameter to generate class A object temperature
 	//A a = 1;
-};
+};*/
 
 //std::function std::bind
 /*int add(int a,int b){
@@ -378,8 +378,7 @@ TEST_F(numberTest,c){
 }*/
 
 //GTest paramter
-class numberTest : public ::testing::TestWithParam<int>{
-
+/*class numberTest : public ::testing::TestWithParam<int>{
 };
 TEST_P(numberTest,abc){
 	int a = GetParam();
@@ -391,11 +390,53 @@ void runTest(int argc, char* argv[])
 {
 	testing::InitGoogleTest(&argc, argv);
 	RUN_ALL_TESTS();
+}*/
+
+//copy function 拷贝函数 equal function 赋值函数
+/*class A{
+public:
+	A(){};
+//copy function 拷贝
+	A(const A& a){
+		this->age = a.age;
+	}
+//equal function
+	A& operator=(const A& a){
+		this->age = a.age;
+		return *this;
+	}
+	int age{};
+};*/
+
+//std::function and function object
+/*//normal funciton
+int add(int a, int b){
+	return a+b;
 }
+//function object
+class Sub{
+public:
+	int operator()(const int& a, const int& b)
+	{
+		return a - b;
+	}
+};
+void test(){
+	std::list<std::function<int(int ,int)>> func_list;
+	Sub sub;
+	func_list.push_back(add);
+	func_list.push_back(sub);
+	func_list.push_back([](int a, int b){
+		return a * b;
+	});
+	for(const auto& func : func_list){
+		std::cout << func(4,2) << std::endl;
+	}
+}*/
 
 int main(int argc, char* argv[]) {
-	void (*fun)(int argc, char* argv[]) = runTest;
-	fun(argc,argv);
+	void (*fun)() = test;
+	fun();
 	return 0;
 }
 

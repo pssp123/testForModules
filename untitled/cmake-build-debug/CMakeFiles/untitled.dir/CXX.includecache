@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/pierre/untitled/main.cpp
+/home/pierre/workspace/testForModules/untitled/main.cpp
 iostream
 -
 math.h
@@ -32,7 +32,7 @@ forward_list
 vector
 -
 assert.h
-/home/pierre/untitled/assert.h
+/home/pierre/workspace/testForModules/untitled/assert.h
 gtest/gtest.h
-/home/pierre/untitled/gtest/gtest.h
+/home/pierre/workspace/testForModules/untitled/gtest/gtest.h
 

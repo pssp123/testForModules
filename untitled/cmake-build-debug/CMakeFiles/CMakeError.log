@@ -1,26 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_21cfd/fast"
-make[1]: Entering directory '/home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_21cfd.dir/build.make CMakeFiles/cmTC_21cfd.dir/build
-make[2]: Entering directory '/home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_21cfd.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_21cfd.dir/CheckSymbolExists.c.o   -c /home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_21cfd
-/home/pierre/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21cfd.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_21cfd.dir/CheckSymbolExists.c.o  -o cmTC_21cfd 
-CMakeFiles/cmTC_21cfd.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_b774e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b774e.dir/build.make CMakeFiles/cmTC_b774e.dir/build
+make[1]: Entering directory '/home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b774e.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b774e.dir/CheckSymbolExists.c.o   -c /home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b774e
+/home/pierre/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b774e.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_b774e.dir/CheckSymbolExists.c.o  -o cmTC_b774e 
+CMakeFiles/cmTC_b774e.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_21cfd.dir/build.make:97: recipe for target 'cmTC_21cfd' failed
-make[2]: *** [cmTC_21cfd] Error 1
-make[2]: Leaving directory '/home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_21cfd/fast' failed
-make[1]: *** [cmTC_21cfd/fast] Error 2
-make[1]: Leaving directory '/home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_b774e.dir/build.make:97: recipe for target 'cmTC_b774e' failed
+make[1]: *** [cmTC_b774e] Error 1
+make[1]: Leaving directory '/home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b774e/fast' failed
+make: *** [cmTC_b774e/fast] Error 2
 
-File /home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -36,24 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_81c0c/fast"
-make[1]: Entering directory '/home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_81c0c.dir/build.make CMakeFiles/cmTC_81c0c.dir/build
-make[2]: Entering directory '/home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_81c0c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_81c0c.dir/CheckFunctionExists.c.o   -c /home/pierre/clion-2017.2.1/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
-Linking C executable cmTC_81c0c
-/home/pierre/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81c0c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_81c0c.dir/CheckFunctionExists.c.o  -o cmTC_81c0c -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_bc1fc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bc1fc.dir/build.make CMakeFiles/cmTC_bc1fc.dir/build
+make[1]: Entering directory '/home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bc1fc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_bc1fc.dir/CheckFunctionExists.c.o   -c /home/pierre/clion-2017.2.1/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bc1fc
+/home/pierre/clion-2017.2.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc1fc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_bc1fc.dir/CheckFunctionExists.c.o  -o cmTC_bc1fc -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_81c0c.dir/build.make:97: recipe for target 'cmTC_81c0c' failed
-make[2]: *** [cmTC_81c0c] Error 1
-make[2]: Leaving directory '/home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_81c0c/fast' failed
-make[1]: *** [cmTC_81c0c/fast] Error 2
-make[1]: Leaving directory '/home/pierre/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+CMakeFiles/cmTC_bc1fc.dir/build.make:97: recipe for target 'cmTC_bc1fc' failed
+make[1]: *** [cmTC_bc1fc] Error 1
+make[1]: Leaving directory '/home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bc1fc/fast' failed
+make: *** [cmTC_bc1fc/fast] Error 2
 
 
