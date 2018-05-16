@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pierre/workspace/testForModules/EnCode/main.cpp
+iostream
+-
+main.hpp
+/home/pierre/workspace/testForModules/EnCode/main.hpp
+
+/home/pierre/workspace/testForModules/EnCode/main.hpp
+
