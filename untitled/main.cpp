@@ -1,4 +1,6 @@
 #include <iostream>
+#include <tuple>
+#include <set>
 #include <math.h>
 #include <typeinfo>
 #include <eigen3/Eigen/Core>
@@ -14,9 +16,9 @@
 #include "gtest/gtest.h"
 #include <fstream>
 #include <sstream>
+//using namespace std;
 
 
-using namespace std;
 //dynamic_cast const_cast static_cast
 /*//prepare
 class Base{
@@ -485,8 +487,55 @@ void outStringstream()
 	cout << out.str();
 }*/
 
+//std::set std::multiset
+/*void set(){
+//	std::set<int> a;
+	std::multiset<int> a;
+	a.insert(3);
+	a.insert(1);
+	a.insert(5);
+	a.insert(4);
+	a.insert(2);
+	a.insert(2);
+	std::cout<<"count"<<a.count(2)<<std::endl;
+	for(const int& val : a)
+		printf("val:%d\n",val);
+}*/
+
+//std::any_of
+/*void any_of(){
+	std::multiset<int> a;
+	a.insert(3);
+	a.insert(1);
+	a.insert(5);
+	a.insert(4);
+	a.insert(2);
+	a.insert(2);
+	bool found = std::any_of(a.begin(),a.end(),[](const int& val){
+		return val == 3;
+	});
+	std::cout<<"Found:"<<found<<std::endl;
+}*/
+
+//std::tuple std::tie
+/*void test_tuple(){
+	int n1;
+	double n2;
+	float n3;
+	std::tuple<int,double,float> a = make_tuple(1,2.3333333333333333,3.1);
+	std::tie(n1,n2,n3) = a;
+	printf("%d,%lf,%f\n",n1,n2,n3);
+}*/
+
+//using std::cout
+/*void test(){
+	using std::cout;
+	using std::endl;
+	cout<<"pengpei"<<endl;
+}*/
+
 int main(int argc, char* argv[]) {
-	void (*fun)() = outStringstream;
+	void (*fun)()= test;
 	fun();
 	return 0;
 }

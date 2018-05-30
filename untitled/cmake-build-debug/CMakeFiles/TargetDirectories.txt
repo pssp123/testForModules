@@ -1,3 +1,0 @@
-/home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/pierre/workspace/testForModules/untitled/cmake-build-debug/CMakeFiles/untitled.dir
